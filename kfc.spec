@@ -1,15 +1,14 @@
 Name:           kfc
 Version:        0.1.3
-Release:        1%{?dist}
+Release:        1
 Summary:        Terminal-emulator color palette setter written in POSIX C99
 
 License:        MIT
 URL:            https://github.com/mcpcpc/kfc
-Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
+Source0:        https://github.com/mcpcpc/kfc/archive/%{version}/%{name}-%{version}.tar.gz
 
-BuildRequires:  gcc-c++
 BuildRequires:  make
-BuildRequires:  libX11-devel
+BuildRequires:  pkgconfig(x11)
 
 %description
 kfc ("KISS for colors") is a terminal-emulator color palette setter written in
@@ -32,7 +31,3 @@ utilities and applications.
 %doc README docs
 %{_bindir}/kfc
 %{_datadir}/kfc
-
-%changelog
-* Sun Jan 24 2021 Davide Cavalca <dcavalca@fedoraproject.org> - 0.1.3-1
-- Initial package
