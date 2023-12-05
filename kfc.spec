@@ -1,6 +1,6 @@
 Name:           kfc
-Version:        0.1.3
-Release:        2
+Version:        0.1.4
+Release:        1
 Summary:        Terminal-emulator color palette setter written in POSIX C99
 
 License:        MIT
